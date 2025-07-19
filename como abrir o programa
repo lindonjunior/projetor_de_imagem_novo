@@ -1,0 +1,8 @@
+cd "/home/mint/Área de trabalho/ImageProjector/" && source .venv/bin/activate && python main.py
+
+7z a -tzip "/home/mint/Área de trabalho/ImageProjector.zip" "/home/mint/Área de trabalho/ImageProjector/"
+
+tree -a -h "/home/mint/Área de trabalho/ImageProjector/" > "/home/mint/Área de trabalho/estrutura.txt"
+
+
+

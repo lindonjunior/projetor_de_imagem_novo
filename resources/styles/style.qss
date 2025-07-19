@@ -1,0 +1,89 @@
+/* resources/styles/style.qss */
+/* Exemplo de folha de estilo para personalizar a aparência da aplicação */
+
+QMainWindow {
+    background-color: #3c3c3c;
+}
+
+QPushButton {
+    background-color: #5a5a5a;
+    color: white;
+    border: 1px solid #6a6a6a;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+    background-color: #4a4a4a;
+}
+
+/* Estilo especial para o botão de projetar */
+#ProjectButton {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #007acc; /* Azul */
+}
+
+#ProjectButton:hover {
+    background-color: #008ae6;
+}
+
+/* Quando o botão estiver no modo "Recolher" */
+#ProjectButton[recolher="true"] {
+    background-color: #cc3300; /* Vermelho */
+}
+
+#ProjectButton[recolher="true"]:hover {
+    background-color: #e64a19;
+}
+
+
+QGroupBox {
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-top: 1ex; /* Deixa espaço para o título */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #3c3c3c;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    background: white;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+    border: 1px solid #5c5c5c;
+    width: 18px;
+    margin: -2px 0; 
+    border-radius: 3px;
+}
+
+QListWidget {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+QListWidget::item {
+    padding: 5px;
+}
+
+QListWidget::item:selected {
+    background-color: #007acc;
+    color: white;
+}
+
